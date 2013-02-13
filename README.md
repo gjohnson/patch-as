@@ -1,9 +1,9 @@
 
-## patch-as
+# patch-as
 
 Patch ugly property names with a proxy to a better one.
 
-### usage
+## usage
 
 ```js
 
@@ -40,6 +40,6 @@ assert.equal(obj.name, obj.n);
 
 ```
 
-### license
+## license
 
 MIT
