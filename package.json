@@ -1,0 +1,18 @@
+{
+  "name": "patch-as",
+  "version": "0.0.1",
+  "description": "creates an alias mapping function for properties",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gjohnson/patch-as.git"
+  },
+  "keywords": [
+    "alias"
+  ],
+  "author": "Garrett Johnson",
+  "license": "MIT"
+}
