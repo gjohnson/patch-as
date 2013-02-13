@@ -12,15 +12,17 @@ module.exports = function(mapping){
     Object
     .keys(mapping)
     .forEach(function(key){
-      if (Object.getOwnPropertyDescriptor(obj)) return;
-      Object.defineProperty(obj, mapping[key], {
-        get: function(){
-          return obj[key];
-        },
-        set: function(value){
-          obj[key] = value;
-        }
-      });
+      var as = mapping[key];
+      if (!Object.getOwnPropertyDescriptor(obj, as)) {
+        Object.defineProperty(obj, as, {
+          get: function(){
+            return obj[key];
+          },
+          set: function(value){
+            obj[key] = value;
+          }
+        });
+      }
     });
   };
 };
