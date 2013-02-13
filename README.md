@@ -3,10 +3,15 @@
 
 Patch ugly property names with a proxy to a better one.
 
+## install
+
+```sh
+$ npm install patch-as
+```
+
 ## usage
 
 ```js
-
 var assert = require('assert');
 var as = require('..');
 
@@ -37,7 +42,6 @@ assert.equal(obj.n, obj.name);
 obj.name = 'buzz doe';
 assert.equal(obj.name, 'buzz doe');
 assert.equal(obj.name, obj.n);
-
 ```
 
 ## license
